@@ -1,4 +1,4 @@
 baseURL = 'https://byte-white.github.io/miled-docs/'
 languageCode = 'en-us'
 title = 'MiLed'
-theme = 'PaperMod'
+theme = 'github.com/adityatelange/hugo-PaperMod'
