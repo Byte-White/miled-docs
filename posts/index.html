@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="Posts - MiLed">
 <meta name="author" content="">
-<link rel="canonical" href="https://miled.github.io/posts/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.07364e0d4070e21e3f3be5df749408d0117f6cf8d160730a29fb57ae6f237381.css" integrity="sha256-BzZODUBw4h4/O&#43;XfdJQI0BF/bPjRYHMKKftXrm8jc4E=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://miled.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://miled.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://miled.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://miled.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://miled.github.io/safari-pinned-tab.svg">
+<link rel="canonical" href="https://byte-white.github.io/miled-docs/posts/">
+<link crossorigin="anonymous" href="/miled-docs/assets/css/stylesheet.e087fd1dc76e73a35ae6d7028ddc1ba41e0131e7f9b3a6e2d019a208e6d6c4b5.css" integrity="sha256-4If9Hcduc6Na5tcCjdwbpB4BMef5s6bi0BmiCObWxLU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://byte-white.github.io/miled-docs/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://byte-white.github.io/miled-docs/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://byte-white.github.io/miled-docs/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://byte-white.github.io/miled-docs/apple-touch-icon.png">
+<link rel="mask-icon" href="https://byte-white.github.io/miled-docs/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://miled.github.io/posts/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://byte-white.github.io/miled-docs/posts/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +58,7 @@
 </noscript><meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://miled.github.io/posts/" />
+<meta property="og:url" content="https://byte-white.github.io/miled-docs/posts/" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -74,7 +74,7 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://miled.github.io/posts/"
+      "item": "https://byte-white.github.io/miled-docs/posts/"
     }
   ]
 }
@@ -96,7 +96,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://miled.github.io/" accesskey="h" title="MiLed (Alt + H)">MiLed</a>
+            <a href="https://byte-white.github.io/miled-docs/" accesskey="h" title="MiLed (Alt + H)">MiLed</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -139,8 +139,8 @@
   <div class="entry-content">
     <p>Installing the library Copy Miled library into your Arduino libraries directory. Include MiLed in Your Sketch Write code Example code for making the first led blink in red #include &lt;MiLed.h&gt; #define DATA_PIN 11 #define LED_COUNT 8 MiLed ml(DATA_PIN,LED_COUNT); void setup() { } void loop() { ml[0] = Led(30,0,0); ml.show(); delay(500); ml[0] = Led(0); ml.show(); delay(500); } Example code showing some of the effects #include &lt;MiLed.h&gt; #define DATA_PIN 11 #define LED_COUNT 8 MiLed ml(DATA_PIN,LED_COUNT); void setup() { } void loop() { effects::gravitypush(ml, Led(30,0,0),35); effects::sendfadeleds(ml,Led(70)); effects::firework(ml); } </p>
   </div>
-  <footer class="entry-footer"><span title='2023-12-30 13:01:48 +0200 EET'>December 30, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Getting Started" href="https://miled.github.io/posts/gettingstarted/"></a>
+  <footer class="entry-footer"><span title='2023-12-30 13:01:48 +0200 +0200'>December 30, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Getting Started" href="https://byte-white.github.io/miled-docs/posts/gettingstarted/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -151,13 +151,13 @@
   <div class="entry-content">
     <p>all of the effects are in the effects namespace void sendfadeleds(MiLed&amp; miled,Led color,int del = 50); void pushledsrandom(MiLed&amp; miled,int num,int del = 50); void rainbow(MiLed&amp; miled); void rainbowpush(MiLed&amp; miled); void rainbowpushchanging(MiLed&amp; miled); void gradient(MiLed&amp; miled,Led color1,Led color2); void gradientmove(MiLed&amp; miled,Led color1,Led color2); void gravity(MiLed&amp; miled,const Led&amp; color,int del = 50); void gravitypush(MiLed&amp; miled,const Led&amp; color,int del = 50); void firework(MiLed&amp; miled,int del = 25); void pushleds(MiLed&amp; miled, const Led&amp; color, int num, int del = 50); miled: a reference to the MiLed instance...</p>
   </div>
-  <footer class="entry-footer"><span title='2023-12-30 13:01:00 +0200 EET'>December 30, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Effects" href="https://miled.github.io/posts/effects/"></a>
+  <footer class="entry-footer"><span title='2023-12-30 13:01:00 +0200 +0200'>December 30, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to Effects" href="https://byte-white.github.io/miled-docs/posts/effects/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://miled.github.io/">MiLed</a></span>
+    <span>&copy; 2023 <a href="https://byte-white.github.io/miled-docs/">MiLed</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

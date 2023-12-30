@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MiLed</title>
-    <link>https://miled.github.io/</link>
+    <link>https://byte-white.github.io/miled-docs/</link>
     <description>Recent content on MiLed</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sat, 30 Dec 2023 13:01:48 +0200</lastBuildDate>
-    <atom:link href="https://miled.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://byte-white.github.io/miled-docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started</title>
-      <link>https://miled.github.io/posts/gettingstarted/</link>
+      <link>https://byte-white.github.io/miled-docs/posts/gettingstarted/</link>
       <pubDate>Sat, 30 Dec 2023 13:01:48 +0200</pubDate>
-      <guid>https://miled.github.io/posts/gettingstarted/</guid>
+      <guid>https://byte-white.github.io/miled-docs/posts/gettingstarted/</guid>
       <description>Installing the library Copy Miled library into your Arduino libraries directory. Include MiLed in Your Sketch Write code Example code for making the first led blink in red #include &amp;lt;MiLed.h&amp;gt; #define DATA_PIN 11 #define LED_COUNT 8 MiLed ml(DATA_PIN,LED_COUNT); void setup() { } void loop() { ml[0] = Led(30,0,0); ml.show(); delay(500); ml[0] = Led(0); ml.show(); delay(500); } Example code showing some of the effects #include &amp;lt;MiLed.h&amp;gt; #define DATA_PIN 11 #define LED_COUNT 8 MiLed ml(DATA_PIN,LED_COUNT); void setup() { } void loop() { effects::gravitypush(ml, Led(30,0,0),35); effects::sendfadeleds(ml,Led(70)); effects::firework(ml); } </description>
     </item>
     <item>
       <title>Effects</title>
-      <link>https://miled.github.io/posts/effects/</link>
+      <link>https://byte-white.github.io/miled-docs/posts/effects/</link>
       <pubDate>Sat, 30 Dec 2023 13:01:00 +0200</pubDate>
-      <guid>https://miled.github.io/posts/effects/</guid>
+      <guid>https://byte-white.github.io/miled-docs/posts/effects/</guid>
       <description>all of the effects are in the effects namespace void sendfadeleds(MiLed&amp;amp; miled,Led color,int del = 50); void pushledsrandom(MiLed&amp;amp; miled,int num,int del = 50); void rainbow(MiLed&amp;amp; miled); void rainbowpush(MiLed&amp;amp; miled); void rainbowpushchanging(MiLed&amp;amp; miled); void gradient(MiLed&amp;amp; miled,Led color1,Led color2); void gradientmove(MiLed&amp;amp; miled,Led color1,Led color2); void gravity(MiLed&amp;amp; miled,const Led&amp;amp; color,int del = 50); void gravitypush(MiLed&amp;amp; miled,const Led&amp;amp; color,int del = 50); void firework(MiLed&amp;amp; miled,int del = 25); void pushleds(MiLed&amp;amp; miled, const Led&amp;amp; color, int num, int del = 50); miled: a reference to the MiLed instance</description>
     </item>
   </channel>
