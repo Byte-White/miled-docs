@@ -20,11 +20,17 @@ jobs:
         with:
           ref: gh-pages
           path: built-site
+          submodules: recursive  # Add this line to make sure submodules are checked out
 
       - name: Setup Hugo
         run: |
           curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
-          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo          
+          tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
+
+      - name: Initialize and update submodules
+        run: |
+          git submodule update --init --recursive
+
       - name: Build
         run: ${RUNNER_TEMP}/hugo
 
@@ -37,4 +43,4 @@ jobs:
           git config user.name 'Byte-Wh1te'
           git config user.email 'bytewh1te@yahoo.com'
           git commit -m 'Updated site'
-          git push          
+          git push
