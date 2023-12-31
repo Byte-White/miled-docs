@@ -145,4 +145,4 @@ _del_: the delay(speed) of the led (default value is 25ms)
 
 ---
 
-**Note:** I will probably not describe all of the effects but I will keep the [list at the top](#effects) up to date.
+**Note:** I will probably not describe all of the effects but I will keep the [list at the top](#all-of-the-effects-are-in-the-effects-namespace) up to date.
